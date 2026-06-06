@@ -228,10 +228,95 @@
         </div>
       </div>
       <!--/ Abstract. -->
-
-
     </div>
   </section>
+
+  <section class="hero is-light is-small">
+    <div class="content"></div>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Reasoning method</h2>
+      <!--<div class="columns is-centered">
+        <div class="column is-custom-large">
+          <div class="content">
+            <img src="./static/images/pipeline_architecture3.png" class="interpolation-image"
+              alt="Architecture of the FIRE-CIR methodology." />
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="content">
+        <img src="./static/images/pipeline_architecture3.png" class="interpolation-image"
+          alt="Architecture of the FIRE-CIR methodology." />
+
+        <p><i>Overview of the FIRE-CIR model. Left: VQA score computation. The modification text is decomposed into a
+            set
+            of visual questions about the candidate image, which are answered using a VQA model. The predicted answers
+            are
+            then used to compute the VQA score, measuring the relevance of the candidate image with respect to the text.
+            The set of questions and their answers give an interpretable insight in the relevance evaluation of each
+            image. Right: CIR inference. Given the CIR query and a set of candidate images, FIRE-CIR computes the VQA
+            score of each candidate image, and combines it with the score returned by another CIR method to refine the
+            ranking of the retrieved images.</i></p>
+      </div>
+      <div class="content"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Qualitative results</h2>
+      <div class="content is-centered">
+        <p>
+          <i>Note: for each query, the ground-truth target image is framed in green.</i>
+        </p>
+      </div>
+
+      <h3 class="title is-5">Results overview</h3>
+      <img src="./static/images/qualitative_example1.png" class="interpolation-image"
+        alt="Qualitative example on Fashion IQ dress." />
+      <img src="./static/images/qualitative_example2.png" class="interpolation-image"
+        alt="Qualitative example on Fashion IQ dress." />
+
+      <div class="content"></div>
+
+      <h3 class="title is-5">Detailed results</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-fiq1">
+          <img src="./static/images/example3.png" class="interpolation-image"
+            alt="Detailed qualitative example on Fashion IQ dress." />
+        </div>
+        <div class="item item-fiq2">
+          <img src="./static/images/example2.png" class="interpolation-image"
+            alt="Detailed qualitative example on Fashion IQ dress." />
+        </div>
+        <div class="item item-fiq3">
+          <img src="./static/images/example4.png" class="interpolation-image"
+            alt="Detailed qualitative example on Fashion IQ toptee." />
+        </div>
+        <div class="item item-fiq4">
+          <img src="./static/images/example6.png" class="interpolation-image"
+            alt="Detailed qualitative example on Fashion IQ toptee." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Inference speed</h2>
+        <div class="content is-centered">
+          <p>
+            With this method, it is possible to select a trade-off between performance and inference speed.
+          </p>
+          <img src="./static/images/ablation_study_number_images.png" class="interpolation-image"
+            alt="Trade-off between performance and inference speed." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 
   <section class="section" id="BibTeX">
